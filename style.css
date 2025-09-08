@@ -1,0 +1,260 @@
+/* ---------------- General ---------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: #ffffff;
+  color: #333;
+  transition: background 0.4s, color 0.4s;
+}
+
+h2 {
+  font-weight: 700;
+  color: #0d6efd;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  transition: all 0.4s ease;
+  padding: 15px 0;
+  background: #ffffff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("assets/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* Typing animation styles */
+.typed-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border-right: 3px solid #ffdd57;
+  width: fit-content;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Highlight colors for roles */
+.role-developer {
+  color: #0d6efd; /* Blue */
+}
+.role-qa {
+  color: #28a745; /* Green */
+}
+.role-it {
+  color: #ff9800; /* Orange */
+}
+.role-fullstack {
+  color: #9c27b0; /* Purple */
+}
+
+.hero .btn {
+  margin-top: 15px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------------- Skills ---------------- */
+.skill-card {
+  background: linear-gradient(135deg, #ffffff, #f0f4ff);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(13, 110, 253, 0.2);
+}
+
+/* ---------------- Experience Timeline ---------------- */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 30px;
+  border-left: 3px solid #0d6efd;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: #0d6efd;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+.timeline-content {
+  background: linear-gradient(135deg, #ffffff, #f9fbff);
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-content h5 {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* ---------------- Projects ---------------- */
+.project-card {
+  background: linear-gradient(135deg, #ffffff, #eef6ff);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h5 {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* ---------------- Contact ---------------- */
+#contact a {
+  text-decoration: none;
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #084298;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  font-size: 0.9rem;
+  background: #0d6efd;
+  color: #fff;
+}
+
+footer .social-icons a {
+  font-size: 1.4rem;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffdd57;
+}
+
+/* ---------------- Dark Mode ---------------- */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background: #1f1f1f !important;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .timeline-content,
+body.dark-mode .project-card {
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  color: #f1f1f1;
+  border-left-color: #bb86fc;
+}
+
+body.dark-mode .timeline {
+  border-left: 3px solid #bb86fc;
+}
+
+body.dark-mode .timeline-dot {
+  background: #bb86fc;
+  box-shadow: 0 0 0 3px rgba(187, 134, 252, 0.3);
+}
+
+body.dark-mode h2,
+body.dark-mode h5 {
+  color: #bb86fc;
+}
+
+body.dark-mode footer {
+  background: #1f1f1f;
+}
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5b;
+  transform: scale(1.1);
+}

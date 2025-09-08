@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Thuo | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Sam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <button id="toggle-dark" class="btn btn-sm btn-outline-primary ms-3">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center" data-aos="zoom-in">
+      <h1 class="display-4 fw-bold mb-3">Hi, I'm Samuel Thuo</h1>
+      <h2 class="typed-text"></h2>
+      <a href="#projects" class="btn btn-lg btn-outline-light rounded-pill px-4 mt-4">See My Work</a><br>
+      <a href="assets/Resume.pdf" class="btn btn-light btn-sm rounded-pill mt-3" target="_blank">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p class="text-center">I’m a passionate IT professional with a Bachelor's in Information Technology and experience in full-stack development, system support, and deployment. I specialize in Django, JavaScript, and IT operations.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="skill-card p-4 shadow-sm rounded">
+            <h4>Languages & Frameworks</h4>
+            <ul>
+              <li>Python, JavaScript, Dart</li>
+              <li>HTML5, CSS3, Bootstrap</li>
+              <li>Django, REST APIs</li>
+              <li>Flutter, Firebase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="skill-card p-4 shadow-sm rounded">
+            <h4>Tools & Systems</h4>
+            <ul>
+              <li>Git, GitHub, Heroku</li>
+              <li>System Administration, IT Support</li>
+              <li>Network Configuration</li>
+              <li>Cybersecurity Basics</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="skill-card p-4 shadow-sm rounded">
+            <h4>QA & Domain Knowledge</h4>
+            <ul>
+              <li>Bug Tracking & Issue Resolution</li>
+              <li>Performance & Load Testing</li>
+              <li>QA Test Planning & Strategy</li>
+              <li>Health Information Systems (HIS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Professional Experience</h2>
+      <div class="timeline">
+
+        <!-- QA Manager -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>QA Manager</h5>
+            <p class="text-muted mb-1">Circular Innovation Hub – Nairobi, Kenya</p>
+            <p class="small">Jun 2025 – Present</p>
+            <ul>
+              <li>Lead QA strategy and testing processes for digital and hardware innovation projects.</li>
+              <li>Manage a cross-functional QA team ensuring product quality and compliance.</li>
+              <li>Implement automated testing frameworks and defect-tracking processes.</li>
+              <li>Collaborate with developers, designers, and stakeholders to improve user experience.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- IT Support Specialist -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>IT Support Specialist</h5>
+            <p class="text-muted mb-1">Revivo Kenya – Nairobi, Kenya</p>
+            <p class="small">Sept 2024 – Present</p>
+            <ul>
+              <li>Provide IT support for hardware/software issues, ensuring smooth system functionality.</li>
+              <li>Administer IT systems, improving uptime by 15%.</li>
+              <li>Resolve issues quickly to minimize downtime and optimize processes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- QA Engineer -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>Quality Assurance Engineer</h5>
+            <p class="text-muted mb-1">Revivo Kenya – Nairobi, Kenya</p>
+            <p class="small">Aug 2024 – Sept 2024</p>
+            <ul>
+              <li>Led QA efforts for laptops and mobile phones, reducing defects by 25%.</li>
+              <li>Conducted performance, stress, and compatibility testing.</li>
+              <li>Collaborated with developers to resolve bugs and improve product quality.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Logistics Assistant -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>Logistics Assistant</h5>
+            <p class="text-muted mb-1">Revivo Kenya – Nairobi, Kenya</p>
+            <p class="small">Feb 2024 – Aug 2024</p>
+            <ul>
+              <li>Managed logistics and inventory operations, improving delivery efficiency by 15%.</li>
+              <li>Coordinated timely shipments and optimized vendor relations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Inventory & Logistics -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>Inventory & Logistics Assistant</h5>
+            <p class="text-muted mb-1">Broadway Bakery Limited – Mombasa, Kenya</p>
+            <p class="small">Mar 2023 – Sept 2023</p>
+            <ul>
+              <li>Oversaw inventory and optimized warehouse processes, improving on-time deliveries by 15%.</li>
+              <li>Streamlined shipment operations and enhanced stock management accuracy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Freelance -->
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>Full-Stack Developer (Freelance Projects)</h5>
+            <p class="text-muted mb-1">Remote – Various Clients</p>
+            <p class="small">2022 – Present</p>
+            <ul>
+              <li>Built Django & React-based applications, integrating REST APIs and payment gateways.</li>
+              <li>Developed Flutter mobile apps for e-commerce and delivery services.</li>
+              <li>Designed and deployed responsive portfolio websites with modern UI/UX.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Internship -->
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h5>Software Development Intern</h5>
+            <p class="text-muted mb-1">Tech Hub – Kenya</p>
+            <p class="small">Aug 2021 – Dec 2021</p>
+            <ul>
+              <li>Assisted in developing web applications with Python, JavaScript, and Django.</li>
+              <li>Supported QA testing, bug tracking, and issue resolution.</li>
+              <li>Contributed to Agile team development sprints and documentation.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center" data-aos="fade-up">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="flip-left">
+          <div class="project-card p-3 shadow-sm rounded">
+            <h5>E-Commerce App</h5>
+            <p>Full-stack Django application featuring user auth, product catalog, and cart.</p>
+            <a href="https://github.com/SamueLThuo/project" target="_blank" class="btn btn-primary btn-sm">View on GitHub</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+          <div class="project-card p-3 shadow-sm rounded">
+            <h5>Food Delivery App</h5>
+            <p>Flutter-based app for ordering and tracking meals.</p>
+            <a href="#" class="btn btn-primary btn-sm disabled">Demo Coming Soon</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="400">
+          <div class="project-card p-3 shadow-sm rounded">
+            <h5>Hotel Management System</h5>
+            <p>Manage bookings, billing, and customer data.</p>
+            <a href="https://hotelvillapark.netlify.app/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="600">
+          <div class="project-card p-3 shadow-sm rounded">
+            <h5>No-Code Portfolio</h5>
+            <p>Showcase site built using Bubble.io for easy editing.</p>
+            <a href="https://spareit.bubbleapps.io/version-test?debug_mode=true" target="_blank" class="btn btn-primary btn-sm">Live Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:samkimthuo@gmail.com">samkimthuo@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> +254 741140644</p>
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254741140644" target="_blank">+254 741140644</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/samthuo1" target="_blank">linkedin.com/in/samthuo1</a></p>
+    </div>
+    <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2547" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-primary text-light">
+    <div class="social-icons mb-2">
+      <a href="https://wa.me/254704469676" target="_blank" class="text-light me-3"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com/in/samthuo1" target="_blank" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Samuel Kirimi Thuo. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, offset: 100 });
+  </script>
+</body>
+</html>
